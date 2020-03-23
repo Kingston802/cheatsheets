@@ -1,3 +1,4 @@
-# should only allow .md files
-./**
+# should only allow .md files and the gitignore
+*
 !.md
+!.gitignore
