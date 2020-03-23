@@ -1,0 +1,3 @@
+# should only allow .md files
+./**
+!.md
