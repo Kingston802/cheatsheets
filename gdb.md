@@ -4,7 +4,7 @@ gdb is the 'GNU debugger', it's included in pretty much every unix distribution
 ## running gdb 
 ```bash
 g++ -g filename.cpp -o outputname # use the -g flag when compiling to give the debugger symbols
-gdb
+gdb outputname
 ```
 this only starts the debugger, it does not run the program within the debugger
 to start the program
@@ -19,7 +19,7 @@ to start the program
 (gdb) n # ^
 (gdb) step # step into function calls
 (gdb) s # ^
-(gdb) print var_name # print the current value of a variable in the program
+(gdb) print var_name # print the current value of a variable called 'var_name' in the program
 (gdb) bt # 'backtrace' gives useful info about where you are
 (gdb) quit
 ```
@@ -35,6 +35,7 @@ this will help with a segmentation fault (also called a core dump)
     (gdb) b Line_number # e.g.
     (gdb) b 22
 ```
+setting a breakpoint will mean the code will exit into the debugger at the set line
 
 ## want more?
 ```bash 

@@ -3,6 +3,7 @@ groff is a minalist typesetting system for GNU/linux (all these commands are for
 
 ## compiling 
 ```groff
+groff -e -ms -T pdf input.ms > output.pdf
 ```
 
 ## basic formatting 
@@ -58,10 +59,29 @@ delim $$
 .PP
 Here is an equation $sum from 1 to  10 = 5$
 ```
+to use eqn make sure you compile with -e
 
 ## refer 
+refer uses a reference file which lists the works the author might want to refer to
 ```groff
+%K keyword  
+%A author
+%T title
+%I publisher
+%E editor
+%D date
 ```
+you can then refer to them
+```groff
+.[
+    title author keyword
+.]
+```
+you can use any of these or none of them 
+```groff
+refer -e file.ms | groff ...
+```
+you need to pipe the output of refer into the groff command  
 
 ## want to know more?
 ```bash
