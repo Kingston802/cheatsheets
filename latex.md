@@ -1,11 +1,11 @@
 # latex 
 latex is a type setting system that evolved from donald knuth's 'tex' system
-it's pronounced 'lah-tek'
+,its pronounced 'lah-tek'
 
 ## compiling
 the exact command depends on your system and installation but it is usually 
 ```bash
-pdflatex 
+pdflatex filename.tex
 ```
 
 ## basic document structure
@@ -28,7 +28,7 @@ this is on the same line
 
 this is on a new line
 
-\end{document}
+\end{document} % make sure you include this
 ```
 a double space will cause latex to put the sentence on a new line
 
@@ -111,4 +111,5 @@ double quotes
 man latex
 ```
 [math symbols](https://en.wikipedia.org/wiki/Wikipedia:LaTeX_symbols)
+
 [overleaf tutorial](https://www.overleaf.com/learn/latex/Tutorials)
