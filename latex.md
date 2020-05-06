@@ -1,6 +1,6 @@
 # latex 
-latex is a type setting system that evolved from donald knuth's 'tex' system
-,its pronounced 'lah-tek'
+latex is a type setting system that evolved from donald knuth's 'tex' system,
+it's pronounced 'lah-tek'
 
 ## compiling
 the exact command depends on your system and installation but it is usually 
