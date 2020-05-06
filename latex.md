@@ -44,6 +44,7 @@ E = mc^2
 \begin{displaymath}
 x = 1 + 2 \\
 y = 2 + 3 \\
+\end{displaymath}
 ```
 \\ will break the line 
 in math mode, whitespace does not matter
